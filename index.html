@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-pr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="/app.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <section id="calculate">
+        <section id="PrintOperations">
+            <p id="PrintNumber"></p>
+        </section>
+        <section id="ButtonsContainer">
+            <section id="NumbersContainer">
+                <div class="NumberButton" onclick="imprimir('7')" >7</div>
+                <div class="NumberButton" onclick="imprimir('8')" >8</div>
+                <div class="NumberButton" onclick="imprimir('9')" >9</div>
+                <div class="NumberButton" onclick="imprimir('4')" >4</div>
+                <div class="NumberButton" onclick="imprimir('5')" >5</div>
+                <div class="NumberButton" onclick="imprimir('6')" >6</div>
+                <div class="NumberButton" onclick="imprimir('1')" >1</div>
+                <div class="NumberButton" onclick="imprimir('2')" >2</div>
+                <div class="NumberButton" onclick="imprimir('3')" >3</div>
+                <div class="OperationButton" onclick="clean()" >C</div>
+                <div class="NumberButton" onclick="imprimir('0')" >0</div>
+                <div class="OperationButton" onclick="results()">=</div>
+            </section>
+            <section id="OperationsContainer">
+                <div class="OperationButton" onclick="imprimir('+')" >+</div>
+                <div class="OperationButton" onclick="imprimir('-')" >-</div>
+                <div class="OperationButton" onclick="imprimir('x')" >x</div>
+                <div class="OperationButton" onclick="imprimir('÷')" >÷</div>
+            </section>
+        </section>
+    </section>
+    
+</body>
+</html>

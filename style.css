@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    --cor-amarela-buttons: rgb(239, 164, 26);
+    --cor-amarela-hover: rgb(234, 196, 45);
+    --cor-amarela-ativa: rgb(245, 206, 53);
+    --cor-principal: rgb(57, 57, 57);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.13em;
+    background-color: rgb(28, 28, 28);
+}
+
+div {
+    cursor: pointer; /*Isso serve para o cursor virar um pointer quando passar pelos botões*/
+}
+
+/*AQUI EU DEFINO AS CARACTERISTICAS DA CALCULADORA*/
+
+#calculate {
+    background-color: var(--cor-principal);
+    width: 25.00em;
+    height: 31.25em;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.88em;
+}
+
+/*DESIGN DO VISOR ONDE SERÃO IMPRIMIDAS AS OPERAÇÕES*/
+
+#PrintOperations {
+    background-color: black;
+    color: white;
+    width: 90%;
+    height: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1.25em;
+    font-size: 2.50em;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+/*OS TRÊS CONTAINERS ABAIXO ME AJUDAM A POSICIONAR OS BOTÕES*/
+#ButtonsContainer{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#NumbersContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 15em;
+}
+
+#OperationsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0.31em 0 0.31em;
+}
+
+/*DESIGN DOS BOTÕES COM NÚMEROS COM O HOVER E O ACTIVE TAMBÉM*/
+
+.NumberButton {
+    background-color: var(--cor-principal);
+    width: 3.8em;
+    height: 3.8em;
+    margin: 0.50em 0 0.50em 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.3em;
+    font-size: 1.1em;
+    color: white;
+    border: solid 1px rgb(116, 116, 116);
+    border-radius: 16px;
+    transition: background-color 0.5s ease;
+}
+
+.NumberButton:hover {
+    background-color: rgb(81, 81, 81);
+}
+
+.NumberButton:active {
+    background-color: rgb(118, 118, 118);
+}
+
+/*DESIGN DOS BOTÕES COM SIMBOLOS DE OPERAÇÃO COM O HOVER E O ACTIVE TAMBÉM*/
+
+.OperationButton{
+    width: 70px;
+    height: 70px;
+    background-color: var(--cor-amarela-buttons);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+    margin: 8px 0 8px 0;
+    border-radius: 16px;
+    font-size: 26px;
+    transition: background-color 0.5s ease;
+}
+
+.OperationButton:hover {
+    background-color: var(--cor-amarela-hover);
+}
+
+.OperationButton:active {
+    background-color: var(--cor-amarela-ativa);
+}
